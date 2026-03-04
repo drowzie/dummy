@@ -1,3 +1,4 @@
+import time
 from prefect import flow, task
 
 
@@ -10,7 +11,7 @@ def add_integers(a, b):
 def buy():
     result = add_integers(1, 2)
     print(f"Buying securities {result}")
-    sleep(100)
+    time.sleep(30)
 
 
 if __name__ == "__main__":
