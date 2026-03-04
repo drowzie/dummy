@@ -19,7 +19,7 @@ if __name__ == "__main__":
         "https://github.com/drowzie/dummy.git", entrypoint="flows/hello_worl.py:buy"
     ).deploy(
         name="my-code-baked-into-an-image-deployment",
-        work_pool_name="generic-bob",
+        work_pool_name="gener",
         build=False,
         job_variables={"nodeSelector:": {"hardware": "generic-bob"}},
     )
