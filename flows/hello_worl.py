@@ -18,4 +18,5 @@ if __name__ == "__main__":
     ).deploy(
         name="my-code-baked-into-an-image-deployment",
         work_pool_name="generic-bob",
+        build=False,
     )
