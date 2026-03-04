@@ -14,7 +14,7 @@ def buy():
 
 if __name__ == "__main__":
     buy.from_source(
-        "https://github.com/drowzie/dummy.git", entrypoint="flows/hello_worl:buy"
+        "https://github.com/drowzie/dummy.git", entrypoint="flows/hello_worl.py:buy"
     ).deploy(
         name="my-code-baked-into-an-image-deployment",
         work_pool_name="generic-bob",
