@@ -21,5 +21,5 @@ if __name__ == "__main__":
         name="my-code-baked-into-an-image-deployment",
         work_pool_name="generic-bob",
         build=False,
-        infra_overrides={"nodeSelector": {"hardware": "gene", "bb": "a"}},
+        job_variables={"nodeSelector": {"hardware": "gene", "bb": "a"}},
     )
