@@ -10,6 +10,7 @@ def add_integers(a, b):
 def buy():
     result = add_integers(1, 2)
     print(f"Buying securities {result}")
+    sleep(100)
 
 
 if __name__ == "__main__":
