@@ -1,0 +1,22 @@
+# Generic metadata about this project
+name: my-prefect-project
+prefect-version: 3.x # Check Prefect documentation for current version
+
+# pull section allows you to provide instructions for cloning this project in remote locations
+pull:
+- prefect.deployments.steps.git_clone:
+    repository: "https://github.com/drowzie/dummy.git"
+    branch: main
+
+# the deployments section allows you to provide configuration for deploying flows
+deployments:
+- name: my-first-deployment
+  version: '1'
+  description: A test deployment
+  schedule: {}
+  entrypoint: flows/hello_worl.py:buy # Path to your flow file and function
+  parameters: {}
+  work_pool:
+    name: "generic-bob"
+    work_queue_name: default
+  job_variables: {}
