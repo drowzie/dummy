@@ -16,6 +16,9 @@ deployments:
   schedule: {}
   entrypoint: flows/hello_worl.py:buy # Path to your flow file and function
   parameters: {}
+  infra_overrides:
+      nodeSelector:
+        hardware: "gene-bob"
   work_pool:
     name: generic-bob
     work_queue_name: default
